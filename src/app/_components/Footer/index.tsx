@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Footer } from '../../../payload/payload-types'
+// Import Footer type from payload-types without default import to avoid conflict with local Footer component
+import type { Footer } from '../../../payload/payload-types'
 import { fetchFooter, fetchGlobals } from '../../_api/fetchGlobals'
 import { ThemeSelector } from '../../_providers/Theme/ThemeSelector'
 import { Gutter } from '../Gutter'
